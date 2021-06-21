@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./style.css" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+
+        <!-- JavaScript -->
+        <script src="./script.js" defer></script>
+        <script src="./quotes.js"></script>
+
+        <title>Quote Generator</title>
+    </head>
+
+    <body>
+        <div class="quote-container" id="quote-container">
+            <!-- Quote  -->
+            <div class="quote-text">
+                <i class="fas fa-quote-left"></i>
+                <span id="quote"></span>
+            </div>
+
+            <!-- Author -->
+            <div class="quote-author">
+                <span id="author"></span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="twitter-button" id="twitter" title="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                    <!-- <i class="fas fa-bell"></i> -->
+                </button>
+
+                <button id="new-quote">New Quote</button>
+            </div>
+        </div>
+
+        <!-- Loader -->
+        <div class="loader" id="loader"></div>
+        
+
+    </body>
+</html>
+
+<!--
+    
+    Note 1:
+    "title" property in button creates a little tooltip
+        <button class="twitter-button" id="twitter" title="Tweet This!">
+
+
+    Note 2: 
+    "defer" specifies that the script is executed when the page has finished parsing.
+    If neither async or defer is present: The script is fetched and executed immediately, 
+    before the browser continues parsing the page.
+
+ -->
